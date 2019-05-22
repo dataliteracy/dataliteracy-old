@@ -3,24 +3,413 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hello World!</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"
-    />
+    <title>Data Literacy</title>
+    <link rel="stylesheet" href="static/css/bulma.css" />
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   </head>
 
   <body>
-    <section class="section">
-      <div class="container">
-        <h1 class="title">
-          Hello World
-        </h1>
+    <nav
+      class="navbar has-shadow is-spaced"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+          <img src="static/images/main_logo.png" width="200" height="" />
+        </a>
+        <a
+          role="button"
+          class="navbar-burger burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasic"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
       </div>
-    </section>
+      <div id="navbarBasic" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item">
+            Home
+          </a>
+          <a class="navbar-item">
+            About
+          </a>
+          <a class="navbar-item">
+            External Portals
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Units
+            </a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                Unit 1
+              </a>
+              <a class="navbar-item">
+                Unit 2
+              </a>
+              <a class="navbar-item">
+                Unit 3
+              </a>
+              <a class="navbar-item">
+                Unit 4
+              </a>
+              <a class="navbar-item">
+                Unit 5
+              </a>
+              <hr class="navbar-divider" />
+              <a class="navbar-item">
+                Future Units
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-primary">
+                <strong>Contact</strong>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <br />
+    <div class="columns is-mobile is-centered">
+      <div class="column is-two-thirds">
+        <div class="columns">
+          <div class="column is-one-half">
+            <p class="title is-2 has-text-primary">
+              Title to explain the gist of the project/workshop
+            </p>
+            <p class="subtitle is-5">
+              <br />
+              Data literacy can support Nepal government’s priorities by
+              fostering an environment where citizens have the knowledge to use
+              data for evidence-based decision making and to increase
+              transparency and accountability in public service delivery. Data
+              literacy can also potentially lead to innovative solutions that
+              promote economic growth and achieve better living conditions of
+              people. To this end, World Bank in partnership with Open
+              Contracting Partnership and Young Innovations will organize Data
+              Literacy training for academics, CSOs and members of media, and
+              hackathon for diverse group of stakeholders to:
+              <li class="subtitle is-5">
+                increase their data analysis capacity for data driven decision
+                making and
+              </li>
+              <li class="subtitle is-5">
+                develop and pilot data-driven projects.
+              </li>
+            </p>
+          </div>
+          <div class="column is-one-half">
+            <div class="slider">
+              <div><img src="static/images/header1.jpg" /></div>
+              <div><img src="static/images/header2.jpg" /></div>
+              <div><img src="static/images/header3.jpg" /></div>
+              <div><img src="static/images/header4.jpg" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <hr />
+    <div class="columns is-mobile is-centered">
+      <div class="column is-one-third">
+        <p class="title is-4 has-text-primary has-text-centered">
+          Supported by The World Bank
+        </p>
+        <p class="subtitle is-6 has-text-centered">
+          Data literacy can support Nepal government’s priorities by fostering
+          an environment where citizens have the knowledge to use data for
+          evidence-based decision making and to increase transparency and
+          accountability in public.
+        </p>
+      </div>
+    </div>
+    <br />
+    <hr />
+    <p class="title is-4 has-text-primary has-text-centered">
+      Course Units
+    </p>
+    <div class="columns is-mobile is-centered">
+      <div class="column is-two-thirds">
+        <div class="columns">
+          <div class="column is-one-third">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-2by1">
+                  <img src="static/images/card_unit1.jpg" alt="Unit 1" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <strong
+                    >Introduction to Data and Exploratory Data Analysis</strong
+                  >
+                  <p>
+                    Data literacy can support Nepal government’s priorities by
+                    fostering an environment where citizens have the knowledge
+                    to use data for evidence-based decision making and to
+                    increase transparency and accountability in public service
+                    delivery.
+                  </p>
+                </div>
+                <footer class="card-footer">
+                  <a href="#" class="card-footer-item">Start</a>
+                </footer>
+              </div>
+            </div>
+          </div>
+          <div class="column is-one-third">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-2by1">
+                  <img src="static/images/card_unit2.jpg" alt="Unit 1" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <strong>Data Sources, Context, and Privacy</strong>
+                  <p>
+                    Data literacy can support Nepal government’s priorities by
+                    fostering an environment where citizens have the knowledge
+                    to use data for evidence-based decision making and to
+                    increase transparency and accountability in public service
+                    delivery.
+                  </p>
+                </div>
+                <footer class="card-footer">
+                  <a href="#" class="card-footer-item">Start</a>
+                </footer>
+              </div>
+            </div>
+          </div>
+          <div class="column is-one-third">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-2by1">
+                  <img src="static/images/card_unit3.jpg" alt="Unit 1" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <strong>Data Analysis Using Statistical Methods</strong>
+                  <p>
+                    Data literacy can support Nepal government’s priorities by
+                    fostering an environment where citizens have the knowledge
+                    to use data for evidence-based decision making and to
+                    increase transparency and accountability in public service
+                    delivery.
+                  </p>
+                </div>
+                <footer class="card-footer">
+                  <a href="#" class="card-footer-item">Start</a>
+                </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="columns is-mobile is-centered">
+      <div class="column is-two-thirds">
+        <div class="columns">
+          <div class="column is-one-third">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-2by1">
+                  <img src="static/images/card_unit4.jpg" alt="Unit 1" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <strong>Obtaining & Wrangling with Messy Data</strong>
+                  <p>
+                    Data literacy can support Nepal government’s priorities by
+                    fostering an environment where citizens have the knowledge
+                    to use data for evidence-based decision making and to
+                    increase transparency and accountability in public service
+                    delivery.
+                  </p>
+                </div>
+                <footer class="card-footer">
+                  <a href="#" class="card-footer-item">Start</a>
+                </footer>
+              </div>
+            </div>
+          </div>
+          <div class="column is-one-third">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-2by1">
+                  <img src="static/images/card_unit5.jpg" alt="Unit 1" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <strong>Framing Relevant Questions for Investigation</strong>
+                  <p>
+                    Data literacy can support Nepal government’s priorities by
+                    fostering an environment where citizens have the knowledge
+                    to use data for evidence-based decision making and to
+                    increase transparency and accountability in public service
+                    delivery.
+                  </p>
+                </div>
+                <footer class="card-footer">
+                  <a href="#" class="card-footer-item">Start</a>
+                </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <br />
+    <hr />
+    <div class="columns is-mobile is-centered">
+      <div class="column is-one-third">
+        <p class="title is-4 has-text-primary has-text-centered">
+          Companies that support us
+        </p>
+        <p class="subtitle is-6 has-text-centered">
+          Data literacy can support Nepal government’s priorities by fostering
+          an environment where citizens have the knowledge to use data for
+          evidence-based decision making and to increase transparency and
+          accountability in public.
+        </p>
+      </div>
+    </div>
+
+    <div class="columns is-mobile is-centered">
+      <div class="column is-two-thirds">
+        <div class="columns">
+          <div class="column">
+            <div class="notification is-primary has-text-centered">
+              <p class="title">1</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="notification is-primary has-text-centered">
+              <p class="title">2</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="notification is-primary has-text-centered">
+              <p class="title">3</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="notification is-primary has-text-centered">
+              <p class="title">4</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="notification is-primary has-text-centered">
+              <p class="title">5</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <hr />
+    <div class="columns is-mobile is-centered">
+      <div class="column is-one-third">
+        <p class="title is-4 has-text-primary has-text-centered">
+          Communities that support us
+        </p>
+        <p class="subtitle is-6 has-text-centered">
+          Data literacy can support Nepal government’s priorities by fostering
+          an environment where citizens have the knowledge to use data for
+          evidence-based decision making and to increase transparency and
+          accountability in public.
+        </p>
+      </div>
+    </div>
+
+    <div class="columns is-mobile is-centered">
+      <div class="column is-two-thirds">
+        <div class="columns">
+          <div class="column">
+            <div class="notification is-primary has-text-centered">
+              <p class="title">1</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="notification is-primary has-text-centered">
+              <p class="title">2</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="notification is-primary has-text-centered">
+              <p class="title">3</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="notification is-primary has-text-centered">
+              <p class="title">4</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="notification is-primary has-text-centered">
+              <p class="title">5</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="content">
+        <div class="columns is-mobile is-centered">
+          <div class="column is-two-thirds">
+            <div class="columns">
+              <div class="column is-one-third">
+                <p class="has-text-danger">Home | About | Units | Contact</p>
+                <p>+977980000000, +977980000000 <br />contact@contact.com</p>
+              </div>
+              <div class="column is-one-third"></div>
+              <div class="column is-one-third">
+                <figure class="image is-48x48">
+                  <img src="static/images/cc.png" />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
+  <script>
+    $(document).ready(function() {
+      $(".slider").bxSlider({
+        auto: true,
+        autoControls: false,
+        stopAutoOnClick: true,
+        pager: true,
+        slideWidth: 700
+      });
+    });
+  </script>
 </html>
