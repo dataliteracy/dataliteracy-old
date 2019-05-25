@@ -1616,7 +1616,7 @@ a.box:active{
     box-shadow:0 0 0 .125em rgba(0,209,178,.25)
 }
 .button.is-primary.is-active,.button.is-primary:active{
-    background-color:#00b89c;
+    background-color:#009fda;
     border-color:transparent;
     color:#fff
 }
