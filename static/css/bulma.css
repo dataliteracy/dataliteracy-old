@@ -5904,8 +5904,8 @@ a.panel-block:hover,label.panel-block:hover{
     border-radius:0 4px 4px 0
 }
 .tabs.is-toggle li.is-active a{
-    background-color:#3273dc;
-    border-color:#3273dc;
+    background-color:#009fda;
+    border-color:#009fda;
     color:#fff;
     z-index:1
 }
@@ -7844,7 +7844,7 @@ a.panel-block:hover,label.panel-block:hover{
     }
 }
 .hero.is-primary{
-    background-color:#00d1b2;
+    background-color:#009fda;
     color:#fff
 }
 .hero.is-primary a:not(.button):not(.dropdown-item):not(.tag),.hero.is-primary strong{
@@ -8278,5 +8278,18 @@ a.panel-block:hover,label.panel-block:hover{
 .footer{
     background-color:#009fda;
     padding:3rem 1.5rem 6rem
+}
+#tab-content section {
+  display: none;
+}
+
+#tab-content section.is-active {
+  display: block;
+}
+
+.ul-nested {
+    display: block;
+    list-style-type: disc;
+    padding-inline-start: 10px;
 }
  
