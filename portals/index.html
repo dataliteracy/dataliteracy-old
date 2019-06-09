@@ -2,17 +2,11 @@
 <html lang="en" class="has-navbar-fixed-top">
   <head>
     <title>External Portals</title>
-
     
-    <link
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
     <link
       href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css"
       rel="stylesheet"
     />
-
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
@@ -39,6 +33,7 @@
 ></script>
 
   </head>
+
   <body>
     
 <nav class="navbar has-shadow is-spaced is-fixed-top" role="navigation" aria-label="main navigation">
@@ -112,24 +107,71 @@
   </div>
 </nav>
     <br />
-    <section class="section">
-      <div class="columns is-mobile is-centered">
-        <div
-          class="column is-three-fifths-mobile is-three-fifths-tablet is-one-third-desktop is-one-third-widescreen is-one-third-fullhd"
-        >
-          <p class="title is-4 has-text-primary has-text-centered is-spaced">
-            External Portals
-          </p>
-          <p class="subtitle is-6 has-text-centered">
-            Data literacy can support Nepal government’s priorities by fostering
-            an environment where citizens have the knowledge to use data for
-            evidence-based decision making and to increase transparency and
-            accountability in public.
-          </p>
+    <section class="hero is-primary">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns">
+            <div class="column">
+              <h1 class="title">
+                External Portals
+              </h1>
+              <h2 class="subtitle">
+                The table below consists of a curated list of open data sources
+                that are relevent in context to Nepal. Nepal Data Literacy
+                Program does not guarentee the availability of these external
+                portals at all times. Please report to us if you question the
+                reliability of any of the sources listed below. Also, if you
+                know of an external data source not listed, please contribute by
+                filling in the form on the right.
+              </h2>
+            </div>
+            <div class="column">
+             
+                <div class="columns is-mobile is-centered">
+                  <div
+                    class="column is-full-mobile is-full-tablet is-one-thirds-desktop is-half-widescreen is-half-fullhd"
+                  >
+                    <form
+                      method="POST"
+                      action="https://formspree.io/datafornepal@gmail.com"
+                    >
+                      <div class="field">
+                        <label class="label has-text-grey-lighter">Email</label>
+                        <div class="control">
+                          <input
+                            name="email_request"
+                            class="input"
+                            type="email"
+                            placeholder="Your email"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="field">
+                        <label class="label has-text-grey-lighter">Link to data source</label>
+                        <div class="control">
+                          <input
+                            name="external_portal_link"
+                            class="input"
+                            type="text"
+                            placeholder="Link"
+                          />
+                        </div>
+                      </div>
+                      <div class="control">
+                        <button type="submit" class="button">
+                          Submit
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-    <hr />
+
     <section class="section">
       <div class="columns is-mobile is-centered">
         <div
@@ -481,7 +523,8 @@
       $(document).ready(function() {
         $("table").DataTable({
           dom: '<"top">frt<"bottom"><"clear">',
-          pageLength: 50
+          pageLength: 50,
+          "bSort": false
         });
       });
     </script>
