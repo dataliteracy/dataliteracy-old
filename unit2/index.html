@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="has-navbar-fixed-top">
   <head>
     
 <meta charset="utf-8" />
@@ -27,24 +27,14 @@
 
   <body>
     
-<nav
-  class="navbar has-shadow is-spaced is-fixed-top"
-  role="navigation"
-  aria-label="main navigation"
->
+<nav class="navbar has-shadow is-spaced is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="/">
-          <p class="title is-4 has-text-primary is-spaced">
-            Nepal Data Literacy Program <sup class="subtitle is-6 has-text-danger">(BETA)</sup>
-          </p>
+      <p class="title is-4 has-text-primary is-spaced">
+        Nepal Data Literacy Program <sup class="subtitle is-6 has-text-danger">(BETA)</sup>
+      </p>
     </a>
-    <a
-      role="button"
-      class="navbar-burger burger"
-      aria-label="menu"
-      aria-expanded="false"
-      data-target="navbarBasic"
-    >
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
@@ -55,71 +45,59 @@
       <a class="navbar-item" href="/">
         Home
       </a>
-
-
-
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link">
-                Workshops
-              </a>
-              <div class="navbar-dropdown">
-            
-                <a class="navbar-item" href="/unit2">
-                  June-July 2019
-                </a>
-            
-            
-              </div>
-            </div>
-      
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Workshops
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="/">
+            June-July 2019
+          </a>
+        </div>
+      </div>
       <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">
           Course Units
         </a>
         <div class="navbar-dropdown">
-          <a class="navbar-item">
+          <a class="navbar-item" href="/">
             Unit 1
           </a>
           <a class="navbar-item" href="/unit2">
             Unit 2
           </a>
-          <a class="navbar-item">
+          <a class="navbar-item" href="/">
             Unit 3
           </a>
-          <a class="navbar-item">
+          <a class="navbar-item" href="/">
             Unit 4
           </a>
-          <a class="navbar-item">
+          <a class="navbar-item" href="/">
             Unit 5
           </a>
         </div>
-        
       </div>
-
-                  <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">
-                      Resources
-                    </a>
-                    <div class="navbar-dropdown">
-                  
-                      <a class="navbar-item" href="/unit2">
-                        External Portals
-                      </a>
-                  
-                  
-                    </div>
-                  </div>
-            <div class="navbar-item">
-              <div class="buttons">
-                <a class="button is-primary" href="/contact">
-                  <strong>Contact</strong>
-                </a>
-              </div>
-            </div>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Resources
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="/portals">
+            External Portals
+          </a>
+        </div>
+      </div>
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-primary" href="/contact">
+            <strong>Contact</strong>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </nav>
-
+    <br />
     <section class="hero is-primary">
       <div class="hero-body">
         <div class="container">
@@ -370,23 +348,37 @@
                     <div class="column">
                         <p class="title is-6 has-text-grey-lighter">Quick Links</p>
                         <hr />
-                        <a class="subtitle is-6 has-text-grey-light" href="index.html">Home</a><br />
-                        <a class="subtitle is-6 has-text-grey-light" href="index.html">June-July 2019 Workshop</a><br />
-                        <a class="subtitle is-6 has-text-grey-light" href="portals.html">External Portals</a><br />
-                        <a class="subtitle is-6 has-text-grey-light" href="contact.html">Contact</a><br />
-                        </p>
+                        <a class="subtitle is-6 has-text-grey-light" href="/">Home</a><br />
+                        <a class="subtitle is-6 has-text-grey-light" href="/">June-July 2019 Workshop</a><br />
+                        <a class="subtitle is-6 has-text-grey-light" href="/portals">External Portals</a><br />
+                        <a class="subtitle is-6 has-text-grey-light" href="/contact">Contact</a>
                     </div>
                     <div class="column">
                         <p class="title is-6 has-text-grey-lighter">Course Units</p>
                         <hr />
-                        <p class="has-text-grey-light">
-                            Unit 1 <br />Unit 2<br />Unit 3<br />Unit 4<br />Unit 5
-                        </p>
+                        <a class="subtitle is-6 has-text-grey-light" href="/unit1">Unit 1</a><br />
+                        <a class="subtitle is-6 has-text-grey-light" href="/unit2">Unit 2</a><br />
+                        <a class="subtitle is-6 has-text-grey-light" href="/unit3">Unit 3</a><br />
+                        <a class="subtitle is-6 has-text-grey-light" href="/unit4">Unit 4</a><br />
+                        <a class="subtitle is-6 has-text-grey-light" href="/unit5">Unit 5</a>
                     </div>
                     <div class="column">
                         <p class="title is-6 has-text-grey-lighter">Contact</p>
                         <hr />
-                        <p class="has-text-grey-light">email@email.com<br />0140000000</p>
+                        <span class="icon">
+                            <i class="fas fa-envelope has-text-grey-light"></i>
+                        </span>
+                        <span>
+                            <a class="is-6 has-text-grey-light" href="mailto:datafornepal@gmail.com">datafornepal@gmail.com</a>
+                        </span>
+
+                        <br />
+                        <span class="icon">
+                            <i class="fas fa-phone has-text-grey-light"></i>
+                        </span>
+                        <span class="is-6 has-text-grey-light">
+                            +977 1-4236000
+                        </span>     
                     </div>
 
                     <div class="column">
@@ -405,7 +397,7 @@
                     <div class="column">
                         <p class="title is-6 has-text-grey-lighter">Organizer and Supporter</p>
                         <hr />
-                        <img src="images/organized.jpg" />
+                        <img src="/images/organized.jpg" />
                         
                     </div>
                 </div>
