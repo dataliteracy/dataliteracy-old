@@ -18,6 +18,11 @@
   </url>
   
   <url>
+    <loc>http://example.org/unit10/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://example.org/unit1/</loc>
     <priority>0</priority>
   </url>
@@ -43,7 +48,32 @@
   </url>
   
   <url>
+    <loc>http://example.org/unit6/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/unit7/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/unit8/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/unit9/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://example.org/workshop1/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/workshop2/</loc>
     <priority>0</priority>
   </url>
   
