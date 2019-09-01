@@ -8331,3 +8331,8 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
 .card {
   height: 100%;
 }
+
+.tabs ul {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}

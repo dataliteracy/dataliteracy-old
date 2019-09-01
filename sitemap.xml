@@ -18,6 +18,11 @@
   </url>
   
   <url>
+    <loc>http://example.org/sample/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://example.org/unit10/</loc>
     <priority>0</priority>
   </url>
