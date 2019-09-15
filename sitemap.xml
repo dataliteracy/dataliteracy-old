@@ -8,17 +8,17 @@
   </url>
   
   <url>
+    <loc>http://example.org/phase3/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://example.org/portals/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://example.org/projects/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.org/sample/</loc>
     <priority>0</priority>
   </url>
   
