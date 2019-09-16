@@ -1,344 +1,83 @@
 <!DOCTYPE html>
-<html lang="en" class="has-navbar-fixed-top">
+<html>
   <head>
+    <title>Embed API Demo</title>
+  </head>
+  <body>
     
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:site_name" content="Nepal Data Literacy Program" />
-<meta property="og:title" content="Nepal Data Literacy Program" />
-<meta property="og:url" content="https://dataliteracy.github.io/" />
-<meta property="og:type" content="website" />
-<meta
-  property="og:description"
-  content="Nepal Data Literacy Program is designed to catalyze stronger data-driven decision-making by government and non-government actors (mass media, civil society, and academia) through targeted Data Literacy Workshop to help Nepal achieve its development goals."
-/>
-<meta
-  property="og:image"
-  content="https://dataliteracy.github.io/images/header2.jpg"
-/>
-<link rel="shortcut icon" href="/images/logo.png" />
 
-<link rel="stylesheet" href="/css/bulma.css" />
-<link
-  href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap"
-  rel="stylesheet"
-/>
-<script
-  defer
-  src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
-></script>
+    <section id="auth-button"></section>
+    <section id="view-selector"></section>
+    <section id="timeline"></section>
 
-
-<script
-  async
-  src="https://www.googletagmanager.com/gtag/js?id=UA-142181287-1"
-></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag("js", new Date());
-
-  gtag("config", "UA-142181287-1");
-</script>
-
-    <title>Analytics</title>
+    
 
     <script>
-      (function(w, d, s, g, js, fs) {
+      (function(w, d, s, g, js, fjs) {
         g = w.gapi || (w.gapi = {});
         g.analytics = {
           q: [],
-          ready: function(f) {
-            this.q.push(f);
+          ready: function(cb) {
+            this.q.push(cb);
           }
         };
         js = d.createElement(s);
-        fs = d.getElementsByTagName(s)[0];
+        fjs = d.getElementsByTagName(s)[0];
         js.src = "https://apis.google.com/js/platform.js";
-        fs.parentNode.insertBefore(js, fs);
+        fjs.parentNode.insertBefore(js, fjs);
         js.onload = function() {
           g.load("analytics");
         };
       })(window, document, "script");
     </script>
-  </head>
-
-  <body>
-    
-<nav class="navbar has-shadow is-spaced is-fixed-top" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a class="navbar-item" href="/">
-      <p class="title is-5 has-text-primary is-spaced">
-        Nepal Data Literacy Program <sup class="subtitle is-6 has-text-danger">(BETA)</sup>
-      </p>
-    </a>
-    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div id="navbarBasic" class="navbar-menu">
-    <div class="navbar-end">
-      <a class="navbar-item" href="/">
-        Home
-      </a>
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          Workshops
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="/workshop1">
-            June-July 2019
-          </a>
-          <a class="navbar-item" href="/workshop2">
-            August-September 2019
-          </a>
-        </div>
-      </div>
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          Course Units
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="/unit1">
-            Unit 1
-          </a>
-          <a class="navbar-item" href="/unit2">
-            Unit 2
-          </a>
-          <a class="navbar-item" href="/unit3">
-            Unit 3
-          </a>
-          <a class="navbar-item" href="/unit4">
-            Unit 4
-          </a>
-          <a class="navbar-item" href="/unit5">
-            Unit 5
-          </a>
-          <a class="navbar-item" href="/unit6">
-            Unit 6
-          </a>
-          <a class="navbar-item" href="/unit7">
-            Unit 7
-          </a>
-          <a class="navbar-item" href="/unit8">
-            Unit 8
-          </a>
-          <a class="navbar-item" href="/unit9">
-            Unit 9
-          </a>
-          <a class="navbar-item" href="/unit10">
-            Unit 10
-          </a>
-        </div>
-      </div>
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          Resources
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="/portals">
-            External Portals
-          </a>
-                  <a class="navbar-item" href="/projects">
-                    Participant Projects Phase 1
-                  </a>
-                                    <a class="navbar-item" href="/phase3">
-                    Participant Projects Phase 3
-                  </a>
-        </div>
-      </div>
-      <div class="navbar-item">
-        <div class="buttons">
-          <a class="button is-primary" href="/contact">
-            <strong>Contact</strong>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</nav>
-    
-    <br />
-    <section class="hero is-primary">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">
-            Analytics
-          </h1>
-          <h2 class="subtitle">
-            Future home of analytics.
-          </h2>
-        </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="columns is-mobile is-centered">
-        <div
-          class="column is-full-mobile is-full-tablet is-one-thirds-desktop is-half-widescreen is-half-fullhd"
-        >
-          <div id="embed-api-auth-container"></div>
-          <div id="chart-1-container"></div>
-          <div id="chart-2-container"></div>
-          <div id="view-selector-1-container"></div>
-          <div id="view-selector-2-container"></div>
-        </div>
-      </div>
-    </section>
-    <br />
-    <hr />
-    <footer class="footer">
-    <div class="content">
-        <div class="columns is-mobile is-centered">
-            <div class="column is-two-thirds">
-                <div class="columns">
-                    <div class="column">
-                        <p class="title is-6 has-text-grey-lighter">Quick Links<br />.....................</p>
-                        <a class="subtitle is-6 has-text-grey-light" href="/">Home</a><br />
-                        <a class="subtitle is-6 has-text-grey-light" href="/workshop1">June-July 2019
-                            Workshop</a><br />
-                        <a class="subtitle is-6 has-text-grey-light" href="/workshop2">August-September 2019
-                            Workshop</a><br />
-                        <a class="subtitle is-6 has-text-grey-light" href="/portals">External
-                            Portals</a><br />
-                        <a class="subtitle is-6 has-text-grey-light" href="/contact">Contact</a>
-                    </div>
-                    <div class="column">
-                        <p class="title is-6 has-text-grey-lighter">Course Units<br />...............................</p>
-                        <div class="columns">
-                            <div class="column">
-                                <a class="subtitle is-6 has-text-grey-light" href="/unit1">Unit
-                                    1</a><br />
-                                <a class="subtitle is-6 has-text-grey-light" href="/unit2">Unit
-                                    2</a><br />
-                                <a class="subtitle is-6 has-text-grey-light" href="/unit3">Unit
-                                    3</a><br />
-                                <a class="subtitle is-6 has-text-grey-light" href="/unit4">Unit
-                                    4</a><br />
-                                <a class="subtitle is-6 has-text-grey-light" href="/unit5">Unit 5</a>
-                            </div>
-                            <div class="column">
-                                <a class="subtitle is-6 has-text-grey-light" href="/unit6">Unit
-                                    6</a><br />
-                                <a class="subtitle is-6 has-text-grey-light" href="/unit7">Unit
-                                    7</a><br />
-                                <a class="subtitle is-6 has-text-grey-light" href="/unit8">Unit
-                                    8</a><br />
-                                <a class="subtitle is-6 has-text-grey-light" href="/unit9">Unit
-                                    9</a><br />
-                                <a class="subtitle is-6 has-text-grey-light" href="/unit10">Unit 10</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <p class="title is-6 has-text-grey-lighter">License<br />...............</p>
-                        <span class="icon">
-                            <i class="fab fa-creative-commons has-text-grey-light fa-2x"></i>
-                        </span>
-                        <span>&nbsp;</span>
-                        <span class="icon">
-                            <i class="fab fa-creative-commons-by has-text-grey-light fa-2x"></i>
-                        </span>
-                        <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
-                            <p class="is-6 has-text-grey-light"> Nepal Data Literacy Program’s content is licensed under
-                                a Creative Commons Attribution-ShareAlike 4.0
-                                International License.
-                            </p>
-                        </a>
-                    </div>
-                    <div class="column">
-                        <p class="title is-6 has-text-grey-lighter">Supported By<br />............................</p>
-                        <img src="/images/organized.jpg" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-<script src="/js/hamburger.js"></script>
 
     <script>
       gapi.analytics.ready(function() {
         
 
+        var CLIENT_ID =
+          "756991977103-dkjcscdlnpofb8ejns5asd9o0pbjij4s.apps.googleusercontent.com";
+
         gapi.analytics.auth.authorize({
-          container: "embed-api-auth-container",
-          clientid:
-            "756991977103-dkjcscdlnpofb8ejns5asd9o0pbjij4s.apps.googleusercontent.com"
+          container: "auth-button",
+          clientid: CLIENT_ID
         });
 
         
 
-        var viewSelector1 = new gapi.analytics.ViewSelector({
-          container: "view-selector-1-container"
+        var viewSelector = new gapi.analytics.ViewSelector({
+          container: "view-selector"
         });
 
         
 
-        var viewSelector2 = new gapi.analytics.ViewSelector({
-          container: "view-selector-2-container"
-        });
-
-        
-        viewSelector1.execute();
-        viewSelector2.execute();
-
-        
-
-        var dataChart1 = new gapi.analytics.googleCharts.DataChart({
+        var timeline = new gapi.analytics.googleCharts.DataChart({
+          reportType: "ga",
           query: {
+            dimensions: "ga:date",
             metrics: "ga:sessions",
-            dimensions: "ga:country",
             "start-date": "30daysAgo",
-            "end-date": "yesterday",
-            "max-results": 6,
-            sort: "-ga:sessions"
+            "end-date": "yesterday"
           },
           chart: {
-            container: "chart-1-container",
-            type: "PIE",
-            options: {
-              width: "100%",
-              pieHole: 4 / 9
-            }
+            type: "LINE",
+            container: "timeline"
           }
         });
 
         
 
-        var dataChart2 = new gapi.analytics.googleCharts.DataChart({
-          query: {
-            metrics: "ga:sessions",
-            dimensions: "ga:country",
-            "start-date": "30daysAgo",
-            "end-date": "yesterday",
-            "max-results": 6,
-            sort: "-ga:sessions"
-          },
-          chart: {
-            container: "chart-2-container",
-            type: "PIE",
-            options: {
-              width: "100%",
-              pieHole: 4 / 9
+        gapi.analytics.auth.on("success", function(response) {
+          viewSelector.execute();
+        });
+
+        viewSelector.on("change", function(ids) {
+          var newIds = {
+            query: {
+              ids: ids
             }
-          }
-        });
-
-        
-
-        viewSelector1.on("change", function(ids) {
-          dataChart1.set({ query: { ids: ids } }).execute();
-        });
-
-        
-
-        viewSelector2.on("change", function(ids) {
-          dataChart2.set({ query: { ids: ids } }).execute();
+          };
+          timeline.set(newIds).execute();
         });
       });
     </script>
