@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://example.org/analytics/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://example.org/contact/</loc>
     <priority>0</priority>
   </url>
