@@ -44,25 +44,6 @@
 </script>
 
     <title>Analytics</title>
-
-    <script>
-      (function(w, d, s, g, js, fs) {
-        g = w.gapi || (w.gapi = {});
-        g.analytics = {
-          q: [],
-          ready: function(f) {
-            this.q.push(f);
-          }
-        };
-        js = d.createElement(s);
-        fs = d.getElementsByTagName(s)[0];
-        js.src = "https://apis.google.com/js/platform.js";
-        fs.parentNode.insertBefore(js, fs);
-        js.onload = function() {
-          g.load("analytics");
-        };
-      })(window, document, "script");
-    </script>
   </head>
 
   <body>
@@ -153,38 +134,47 @@
       </div>
       <div class="navbar-item">
         <div class="buttons">
-          <a class="button is-primary" href="/contact">
+          <a class="button" href="/contact">
             <strong>Contact</strong>
+          </a>
+        </div>
+      </div>
+            <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-primary" href="/analytics">
+            <strong>Portal Analytics</strong>
           </a>
         </div>
       </div>
     </div>
   </div>
 </nav>
-    
+
     <br />
     <section class="hero is-primary">
       <div class="hero-body">
         <div class="container">
           <h1 class="title">
-            Analytics
+            Nepal Data Literacy Portal Analytics
           </h1>
-          <h2 class="subtitle">
-            Future home of analytics.
-          </h2>
+          <h2 class="subtitle"></h2>
         </div>
       </div>
     </section>
     <section class="section">
       <div class="columns is-mobile is-centered">
         <div
-          class="column is-full-mobile is-full-tablet is-one-thirds-desktop is-half-widescreen is-half-fullhd"
+          class="column is-full-mobile is-full-tablet is-four-fifths-desktop is-two-thirds-widescreen is-two-thirds-fullhd"
         >
-          <div id="embed-api-auth-container"></div>
-          <div id="chart-1-container"></div>
-          <div id="chart-2-container"></div>
-          <div id="view-selector-1-container"></div>
-          <div id="view-selector-2-container"></div>
+          <iframe
+            style="height: 2048px;"
+            width="100%"
+            height="2048px"
+            src="https://datastudio.google.com/embed/reporting/10xkqazDlAmSggXHzCI6s12rVHIbVd0Dr/page/1M"
+            frameborder="0"
+            style="border:0"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
     </section>
@@ -261,86 +251,5 @@
 </footer>
 <script src="/js/hamburger.js"></script>
 
-    <script>
-      gapi.analytics.ready(function() {
-        
-
-        gapi.analytics.auth.authorize({
-          container: "embed-api-auth-container",
-          clientid:
-            "756991977103-dkjcscdlnpofb8ejns5asd9o0pbjij4s.apps.googleusercontent.com"
-        });
-
-        
-
-        var viewSelector1 = new gapi.analytics.ViewSelector({
-          container: "view-selector-1-container"
-        });
-
-        
-
-        var viewSelector2 = new gapi.analytics.ViewSelector({
-          container: "view-selector-2-container"
-        });
-
-        
-        viewSelector1.execute();
-        viewSelector2.execute();
-
-        
-
-        var dataChart1 = new gapi.analytics.googleCharts.DataChart({
-          query: {
-            metrics: "ga:sessions",
-            dimensions: "ga:country",
-            "start-date": "30daysAgo",
-            "end-date": "yesterday",
-            "max-results": 6,
-            sort: "-ga:sessions"
-          },
-          chart: {
-            container: "chart-1-container",
-            type: "PIE",
-            options: {
-              width: "100%",
-              pieHole: 4 / 9
-            }
-          }
-        });
-
-        
-
-        var dataChart2 = new gapi.analytics.googleCharts.DataChart({
-          query: {
-            metrics: "ga:sessions",
-            dimensions: "ga:country",
-            "start-date": "30daysAgo",
-            "end-date": "yesterday",
-            "max-results": 6,
-            sort: "-ga:sessions"
-          },
-          chart: {
-            container: "chart-2-container",
-            type: "PIE",
-            options: {
-              width: "100%",
-              pieHole: 4 / 9
-            }
-          }
-        });
-
-        
-
-        viewSelector1.on("change", function(ids) {
-          dataChart1.set({ query: { ids: ids } }).execute();
-        });
-
-        
-
-        viewSelector2.on("change", function(ids) {
-          dataChart2.set({ query: { ids: ids } }).execute();
-        });
-      });
-    </script>
   </body>
 </html>
