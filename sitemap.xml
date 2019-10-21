@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>http://example.org/applied_econometrics/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://example.org/contact/</loc>
     <priority>0</priority>
   </url>
