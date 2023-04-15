@@ -1,125 +1,74 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>http://example.org/analytics/</loc>
     <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://example.org/applied_econometrics/</loc>
     <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://example.org/applied_econometrics_phase1/</loc>
     <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://example.org/contact/</loc>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.org/phase3/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.org/portals/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.org/projects/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.org/solveathon/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.org/unit10/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.org/unit1/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.org/unit2/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.org/unit3/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.org/unit4/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.org/unit5/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.org/unit6/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.org/unit7/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.org/unit8/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.org/unit9/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.org/workshop1/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.org/workshop2/</loc>
-    <priority>0</priority>
-  </url>
-
-  <url>
+  </url><url>
     <loc>http://example.org/courses/</loc>
     <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>http://example.org/phase3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>http://example.org/portals/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>http://example.org/projects/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>http://example.org/solveathon/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>http://example.org/unit1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>http://example.org/unit10/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>http://example.org/unit2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>http://example.org/unit3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>http://example.org/unit4/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>http://example.org/unit5/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>http://example.org/unit6/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>http://example.org/unit7/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>http://example.org/unit8/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>http://example.org/unit9/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>http://example.org/workshop1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>http://example.org/workshop2/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>http://example.org/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://example.org/tags/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://example.org/</loc>
-    <priority>0</priority>
   </url>
-  
 </urlset>
