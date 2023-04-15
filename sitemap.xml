@@ -14,7 +14,7 @@
     <loc>http://example.org/contact/</loc>
     <priority>0</priority>
   </url><url>
-    <loc>http://example.org/courses/</loc>
+    <loc>http://example.org/courses_test/</loc>
     <priority>0</priority>
   </url><url>
     <loc>http://example.org/phase3/</loc>
